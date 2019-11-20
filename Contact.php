@@ -1,6 +1,6 @@
 <html>
     <head><!-- Links, Fonts and Javascript -->
-        <title>Contact</title>
+        <title>Ctents</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="Main.css">
         <link rel="Javascript" type="Javascript" href="JavaScript.js">

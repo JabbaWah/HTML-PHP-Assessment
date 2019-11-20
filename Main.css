@@ -1,0 +1,461 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font:  25px/1.8 "Lato", sans-serif;
+  color: #777; 
+  overflow-x: hidden;
+}
+
+body {
+  margin-left: -1px;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5{
+  position: relative;
+  opacity: 1;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg-1 {
+  background-image: url(Images/Caffeine&Gasoline.png);
+  min-height: 100%;
+  width: 100.2%;
+}
+
+.bgimg-2 {
+  background-image: url(Images/Supra.png);
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url(Images/SilviaS14.png);
+  min-height: 400px;
+}
+
+.bgimg-4 {
+  background-image: url(Images/R34.png);
+  min-height: 100%;
+  width: 100.2%;
+}
+
+.bgimg-5 {
+  background-image: url(Images/240Z.png);
+  min-height: 100%;
+  width: 100.2%;
+  position: absolute;
+}
+
+.Gimg {
+  height: 90%;
+  width: 100%;
+}
+
+.Logo {
+  background-image: url(Images/Logo.png);
+  margin-top: -280px;
+  min-height: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+#move {
+    transition: margin-left 1s;
+    padding: 1px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 40px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
+        background-attachment: scroll;
+    }
+}
+#Title {
+  background-color: transparent;
+  font-size: 50px;
+}
+
+.navtitle {
+    color: white;
+    padding: 6px 8px 6px 32px;
+    border-bottom: solid 1px #00bded;
+    text-decoration: none;
+    font-size: 30px;
+    display: block;
+    transition: 1s;
+}
+
+.sidenav {
+    overflow-y: hidden;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 1s;
+}
+
+.sidenav div a {
+    padding: 12px 8px 12px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 1s;
+}
+
+.sidenav div a:hover {
+    color: #f1f1f1;
+    background-color: #333;
+}
+
+#titlebar {
+    z-index: 500;
+    position: fixed;
+    list-style-type: none;
+    width: 100.8%;
+    height: 68px;
+    background-color: #111;
+    border-bottom: solid 1px #00bded;
+    padding-bottom: 35px;
+    margin-left: -0.1%;
+    margin-top: -0.1%;
+    transition: 1s;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 8px 16px;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    transform: rotate(-45deg) translate(-10px, 10px) ;
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+.container {
+    cursor: pointer;
+    float: left;
+}
+
+#menubtn {
+    z-index: 501;
+    margin-left: 0.01%;
+    list-style-type: none;
+    padding-top: 10px;
+}
+
+#title1 {
+    color: white;
+    position: absolute;
+    margin-top: 35px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+#overlay {
+    transition: opacity 1s;
+    pointer-events: none;
+    display: block;
+    z-index: 300;
+    position: fixed;  
+    height: 341.5%;
+    width: 100%;
+    background-color: black;
+    opacity: 0;
+}
+
+#main {
+    transition: margin-left 1s;
+    padding: 1px;
+    color: transparent;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+#Box1 {
+  color: #777; 
+  background-color: white; 
+  text-align: center; 
+  padding: 50px 80px; 
+  text-align: justify;
+}
+
+#Box2 {
+  color: #ddd; 
+  background-color: #282E34; 
+  text-align: center; 
+  padding:50px 80px; 
+}
+
+#Box3 {
+  color:#ddd;
+  background-color:#282E34;
+  text-align: center;
+  padding:50px 80px;
+  text-align: justify;
+}
+
+.EndHeader {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  background-color: transparent;
+  color: white;
+  font-size:  40px;
+}
+
+.Loginbtn {
+    z-index: 500;
+    position: fixed;
+    float: right; 
+    padding: 0.78%;
+    padding-left: 1.3%;
+    padding-right: 1.3%;
+    margin-top: -1%;
+    margin-left: 94.3%;
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 13% 26px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #373737;
+}
+
+li a:hover {
+    background-color: #373737;
+}
+
+#loginbox {
+    width: 50%;
+    height: 50%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    margin-left: 50%;
+    margin-top: 25%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 2% 5%;
+    border-radius: 15px;
+    border: solid 1px #00bded;
+    font-size: 20px;
+}
+
+.SubBtn {
+    margin-left: 7.8%;
+}
+
+#form1 {
+    margin-left: -50%;
+}
+
+#Loginarea input[type="Text"], input[type="Password"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    color: #fff;
+    font-size: 16px; 
+    padding: -50%;
+}
+
+#Register {
+    margin-left: 50%;
+    margin-top: -91%;
+}
+
+#Register input[type="text"], input[type="Password"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px; 
+}
+
+#RegisterUser {
+    margin-left: 60%;
+    margin-top: -100%;
+}
+
+.SubBtn2 {
+    margin-left: -40%;
+}
+
+#GalleryBox {
+    z-index: 508; 
+    width: 50%;
+    height: 50%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    margin-left: 50%;
+    margin-top: 25%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 2% 5%;
+    border-radius: 15px;
+    border: solid 1px #00bded;
+    font-size: 20px;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
